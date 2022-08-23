@@ -1,6 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 p {
@@ -10,26 +16,36 @@ p {
 
 ul#list {
     display: flex;
-    width: 96%;
-    list-style-type: none;
-    border: 1px solid black;
+    list-style: none;
 }
 
 ul#list li {
-    height: 400px;
+    display: block;
+    min-width: 400px;
     width: 400px;
+    height: 400px;
     overflow: hidden;
     list-style-type: none;
     margin-bottom: 2em;
     margin-left: 2em;
-    border: 1px solid black;
 }
 
-ul#list img {
-    width: 800px;
+ul#list li a {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+ul#list li a:first-of-type {
+    border-right: 10px solid rgb(212, 235, 186);
+    padding-right: 10px;
+}
+
+
+ul#list li a img {
+    margin-top: 10px;
+    width: 600px;
     height: auto;
 }
-
 
 li {
     font-style: italic;
@@ -39,6 +55,7 @@ li {
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 img {
